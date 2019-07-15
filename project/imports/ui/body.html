@@ -1,0 +1,22 @@
+<body>
+<div class="container">
+    <header>
+        <h1>Contact List</h1>
+        <form class="new-contact" disabled="disabled">
+            <input type="text" name="first" placeholder="First name" />
+            <input type="text" name="last" placeholder="Last name" />
+            <input type="number" name="phone" placeholder="Phone" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="submit" value="submit"/>
+        </form>
+    </header>
+
+
+    <ul>
+        {{#each contacts}}
+            {{> contact}}
+        {{/each}}
+    </ul>
+</div>
+</body>
+

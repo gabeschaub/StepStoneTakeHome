@@ -1,0 +1,26 @@
+
+<template name="contact">
+    <li class="{{#if checked}}checked{{/if}}">
+        <button class="delete">&times;</button>
+
+        <input type="button" class="edit-button" value="edit" />
+
+        <span class="text">{{first}}</span>
+        <span class="text">{{last}}</span>
+        <span class="text">{{phone}}</span>
+        <span class="text">{{email}}</span>
+    </li>
+
+    <dialog class="edit-modal" id = "edit-modal-{{_id}}">
+        <form id="edit-{{_id}}" class="update-contact">
+            First: <input type="text" name="first" id="first" placeholder="First name" />
+            Last: <input type="text" name="last" id="last" placeholder="Last name" />
+            Phone: <input type="number" name="phone" id="phone" placeholder="Phone" />
+            Email: <input type="email" name="email" id="email" placeholder="Email" />
+            <input type="submit" value="submit"/>
+        </form>
+    </dialog>
+
+
+</template>
+
