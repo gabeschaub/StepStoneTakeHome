@@ -9,7 +9,9 @@
 function removeDuplicates(strings) \{\
 	let uniqueStrings = \{\};\
 	for(let i = 0; i < array.length; i ++) \{\
-		uniqueStrings[strings[i]];\
+		if(!(strings[i] in uniqueStrings)) \{	\
+			uniqueStrings[strings[i]];\
+		\}\
 	return uniqueStrings.keys();\
 		\
 \
